@@ -2,12 +2,8 @@
 
 A modern, responsive project management dashboard built with React 18, TypeScript, and Vite. This mini-app demonstrates best practices for state management, routing, testing, and accessibility.
 
-## 🎥 Demo
-
-<video width="100%" controls>
-  <source src="https://raw.githubusercontent.com/samier/react-mini-app/main/public/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+## :movie_camera: Demo
+![Demo](./public/demo.gif)
 
 ## 🚀 Features
 
