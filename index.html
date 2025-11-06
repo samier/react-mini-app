@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <script>
+      // Prevent FOUC (Flash of Unstyled Content) on theme change
+      (function() {
+        const theme = localStorage.getItem('theme') || 
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+    <title>Project Dashboard - Manage Your Projects</title>
+    <meta
+      name="description"
+      content="Modern project management dashboard for tracking and managing all your projects in one place. Filter, search, and monitor progress with an intuitive interface."
+    />
+    <meta name="author" content="Project Dashboard" />
+
+    <meta
+      property="og:title"
+      content="Project Dashboard - Manage Your Projects"
+    />
+    <meta
+      property="og:description"
+      content="Modern project management dashboard for tracking and managing all your projects in one place."
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
